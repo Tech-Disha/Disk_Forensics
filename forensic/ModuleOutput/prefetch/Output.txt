@@ -1,0 +1,2 @@
+Prefetch Directory is  C:\Users\dipin\AppData\Local\Temp\Autopsy\forensic_20250324_184335\Temp\RecentActivity\245-Autopsy_PF_DB.db3_2
+DB file is  D:\Downloads\disk_forensics_evidence-1\forensic\ModuleOutput\prefetch\245-Autopsy_PF_DB.db3

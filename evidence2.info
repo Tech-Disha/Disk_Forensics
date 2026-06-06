@@ -1,0 +1,141 @@
+
+GUYMAGER ACQUISITION INFO FILE
+==============================
+
+Guymager
+========
+
+Version              : 0.7.3-1            
+Compilation timestamp: 2014-01-17-14.37.05
+Compiled with        : gcc 4.4.5          
+libewf version       : 20100226           
+libguytools version  : 2.0.2              
+
+
+Device information
+==================
+Command executed: bash -c "search="`basename /dev/sdc`: H..t P.......d A..a de.....d" && dmesg | grep -A3 "$search" || echo "No kernel HPA messages for /dev/sdc""
+Information returned:
+----------------------------------------------------------------------------------------------------
+   No kernel HPA messages for /dev/sdc
+
+Command executed: bash -c "smartctl -s on /dev/sdc ; smartctl -a /dev/sdc"
+Information returned:
+----------------------------------------------------------------------------------------------------
+   smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.13.0-36-generic] (local build)
+   Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+   
+   SMART support is: Unavailable - device lacks SMART capability.
+   A mandatory SMART command failed: exiting. To continue, add one or more '-T permissive' options.
+   smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.13.0-36-generic] (local build)
+   Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+   
+   === START OF INFORMATION SECTION ===
+   Device Model:     VBOX HARDDISK
+   Serial Number:    VB400f23c1-41d7f31e
+   Firmware Version: 1.0
+   User Capacity:    16.777.216 bytes [16,7 MB]
+   Sector Size:      512 bytes logical/physical
+   Device is:        Not in smartctl database [for details use: -P showall]
+   ATA Version is:   ATA/ATAPI-6 published, ANSI INCITS 361-2002
+   Local Time is:    Wed Oct 21 12:57:35 2015 CEST
+   SMART support is: Unavailable - device lacks SMART capability.
+   
+   A mandatory SMART command failed: exiting. To continue, add one or more '-T permissive' options.
+
+Command executed: bash -c "hdparm -I /dev/sdc"
+Information returned:
+----------------------------------------------------------------------------------------------------
+   /dev/sdc:
+   
+   ATA device, with non-removable media
+   	Model Number:       VBOX HARDDISK                           
+   	Serial Number:      VB400f23c1-41d7f31e 
+   	Firmware Revision:  1.0     
+   Standards:
+   	Used: ATA/ATAPI-6 published, ANSI INCITS 361-2002 
+   	Supported: 6 5 4 
+   Configuration:
+   	Logical		max	current
+   	cylinders	32	32
+   	heads		16	16
+   	sectors/track	63	63
+   	--
+   	CHS current addressable sectors:      32256
+   	LBA    user addressable sectors:      32768
+   	LBA48  user addressable sectors:      32768
+   	Logical/Physical Sector size:           512 bytes
+   	device size with M = 1024*1024:          16 MBytes
+   	device size with M = 1000*1000:          16 MBytes 
+   	cache/buffer size  = 256 KBytes (type=DualPortCache)
+   Capabilities:
+   	LBA, IORDY(cannot be disabled)
+   	Queue depth: 32
+   	Standby timer values: spec'd by Vendor, no device specific minimum
+   	R/W multiple sector transfer: Max = 128	Current = 128
+   	DMA: mdma0 mdma1 mdma2 udma0 udma1 udma2 udma3 udma4 udma5 *udma6 
+   	     Cycle time: min=120ns recommended=120ns
+   	PIO: pio0 pio1 pio2 pio3 pio4 
+   	     Cycle time: no flow control=120ns  IORDY flow control=120ns
+   Commands/features:
+   	Enabled	Supported:
+   	   *	Power Management feature set
+   	   *	Write cache
+   	   *	Look-ahead
+   	   *	48-bit Address feature set
+   	   *	Mandatory FLUSH_CACHE
+   	   *	FLUSH_CACHE_EXT
+   	   *	Gen2 signaling speed (3.0Gb/s)
+   	   *	Native Command Queueing (NCQ)
+   Checksum: correct
+
+Hidden areas: unknown
+
+
+Acquisition
+===========
+
+Linux device            : /dev/sdc                                                           
+Device size             : 16777216 (16,8MB)                                                  
+Format                  : Expert Witness Format, sub-format Guymager - file extension is .Exx
+Image meta data         
+   Case number          : 1                                                                  
+   Evidence number      : 2                                                                  
+   Examiner             : Erik                                                               
+   Description          :                                                                    
+   Notes                : VB400f23c1-41d7f31e                                                
+Image path and file name: /root/evidence2.Exx                                                
+Info  path and file name: /root/evidence2.info                                               
+Hash calculation        : MD5, SHA-1 and SHA-256                                             
+Source verification     : on                                                                 
+Image verification      : on                                                                 
+
+No bad sectors encountered during acquisition.
+No bad sectors encountered during verification.
+State: Finished successfully
+
+MD5 hash                   : 5f04a48a8f1a5fec37395cd8387aa43e                                
+MD5 hash verified source   : 5f04a48a8f1a5fec37395cd8387aa43e                                
+MD5 hash verified image    : 5f04a48a8f1a5fec37395cd8387aa43e                                
+SHA1 hash                  : 9257adac118c25b8997cc94a24df385a0e3892e9                        
+SHA1 hash verified source  : 9257adac118c25b8997cc94a24df385a0e3892e9                        
+SHA1 hash verified image   : 9257adac118c25b8997cc94a24df385a0e3892e9                        
+SHA256 hash                : ba3366183d86deba07701e6ca019f348657cc0730fe6ee3b854fe437b62e29e3
+SHA256 hash verified source: ba3366183d86deba07701e6ca019f348657cc0730fe6ee3b854fe437b62e29e3
+SHA256 hash verified image : ba3366183d86deba07701e6ca019f348657cc0730fe6ee3b854fe437b62e29e3
+Source verification OK. The device delivered the same data during acquisition and verification.
+Image verification OK. The image contains exactly the data that was written.
+
+Acquisition started : 2015-10-21 12:57:35 (ISO format YYYY-MM-DD HH:MM:SS)  
+Verification started: 2015-10-21 12:57:36                                   
+Ended               : 2015-10-21 12:57:36 (0 hours, 0 minutes and 1 seconds)
+Acquisition speed   : 16.00 MByte/s (0 hours, 0 minutes and 1 seconds)      
+Verification speed  : 16.00 MByte/s (0 hours, 0 minutes and 1 seconds)      
+
+
+Generated image files and their MD5 hashes
+==========================================
+
+No MD5 hashes available (configuration parameter CalcImageFileMD5 is off)
+MD5                               Image file
+n/a                               evidence2.E01
